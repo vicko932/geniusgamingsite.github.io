@@ -4,15 +4,55 @@ body{
 }
 header.masthead{
     text-align:left;
-    background-image: linear-gradient(45deg,#E5D514,#4FB587);
-    color : #202020;
+    background: #2e2e2e !important;
+    color : white;
     
 }
+#mainNav{
+    padding-top:0;
+    padding-bottom:0;
+}
+#mainNav::after{
+    content:"";
+    height:5px;
+    width:100%;
+    position: absolute;  
+    z-index:200;
+    background-image:linear-gradient(45deg,#2BB778,#a5a200);
+    margin:none;
+    left:0;
+    bottom:0;
+    box-shadow : 0 5px 10px #00000052;
+}
+.navbar{
+    background:#232323 !important;
+    color:white important;
+}
+#mainNav .navbar-nav .nav-item .nav-link{
+    color:#white202020;
+}
 header.masthead p{
-    font-size:34px;
+    font-size:24px;
 }
 #mainNav .navbar-brand{
-    color:#FFF;
+    color:white;
+}
+#mainNav .navbar-brand small{
+    font-size:11px;
+    display:block;
+    margin-top:-9px;
+    color: #cccccc;
+}
+#mainNav .navbar-nav .nav-item .nav-link{
+    padding:40px 10px 40px 10px;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover::after{
+    content:"";
+    height:50px;
+    width:100%;
+    position: relative;  
+    z-index:200;
+    background-color:green;
 }
 header.masthead .masthead-heading{
     margin-bottom:10px !important;
@@ -24,4 +64,8 @@ header.masthead .masthead-heading{
 .btn-primary{
     background:#4FB587 !important;
     border-color:#41916d !important;
+}
+footer{
+    background-image:linear-gradient(45deg,#2BB778,#a5a200);
+    color:white;
 }
