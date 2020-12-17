@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+body{
+    font-family: 'Roboto';
+}
+header.masthead{
+    text-align:left;
+    background-image: linear-gradient(45deg,#E5D514,#4FB587);
+    color : #202020;
+    
+}
+header.masthead p{
+    font-size:34px;
+}
+#mainNav .navbar-brand{
+    color:#FFF;
+}
+header.masthead .masthead-heading{
+    margin-bottom:10px !important;
+    font-family: 'Roboto', sans-serif !important; 
+    font-weight: 600;
+}
+
+/* buttons */
+.btn-primary{
+    background:#4FB587 !important;
+    border-color:#41916d !important;
+}
